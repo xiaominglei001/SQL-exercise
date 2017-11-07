@@ -1,6 +1,9 @@
 
-# 自增注意事项
+# xiao自增注意事项
 例子中的创建语法适用于MySql,如果想看SQLite也可以在**SQL Exercises** [https://en.wikibooks.org/wiki/SQL_Exercises]. 中查看
+## 自己笔记
+### 外键相关
+建立外键可以用如练习1的:FOREIGN KEY (Manufacturer) REFERENCES Manufacturers(Code),其中Manufacturer是表2中的字段,Manufacturers是表2的名字,Code是表2的字段,通过SQLyog查询表2的建表DDL语句,可以发现引擎会自动给这个外键赋值,方便以后管理.
 
 
 # SQL-exercise
