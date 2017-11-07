@@ -5,6 +5,13 @@
 ### 外键相关
 建立外键可以用如练习1的:FOREIGN KEY (Manufacturer) REFERENCES Manufacturers(Code),其中Manufacturer是表Products中的字段,Manufacturers是表Manufacturers 的名字,Code是表Manufacturers的字段,通过SQLyog查询表Products的建表DDL语句,可以发现引擎会自动给这个外键赋值,方便以后管理.
 
+### 其他记录
+
+avg 求平均值
+sum 求和
+count 返回指定列的值的数目（NULL 不计入）：
+
+
 
 # SQL-exercise
 Schemas, Questions &amp; Solutions for SQL Exercising
