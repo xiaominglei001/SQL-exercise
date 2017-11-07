@@ -1,3 +1,8 @@
+
+# 自增注意事项
+例子中的创建语法适用于MySql,如果想看SQLite也可以在**SQL Exercises** [https://en.wikibooks.org/wiki/SQL_Exercises]中查看
+
+
 # SQL-exercise
 Schemas, Questions &amp; Solutions for SQL Exercising
 
