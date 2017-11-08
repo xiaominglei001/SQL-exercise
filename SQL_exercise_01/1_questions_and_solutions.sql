@@ -56,7 +56,7 @@ from Products a join Manufacturers b
 on a.manufacturer = b.code
 group by b.name;
 
-(比如在Products表中Winchester制作商有2种商品,其价格分别是120和5,所以平均值为62.5)
+(比如在Products表中Winchester制造商有2种商品,其价格分别是120和5,所以平均值为62.5)
 
 -- 1.14 Select the names of manufacturer whose products have an average price larger than or equal to $150.
 select avg(a.price), b.name 
@@ -95,6 +95,8 @@ select a.Name, max(a.price), b.Name
 from Manufacturers b join Products a 
 on a.Manufacturer = b.code
 group by b.name;
+
+(选出每个制造商最贵的产品)
 
 
 SELECT Products.Name, MAX(Price), Manufacturers.Name
