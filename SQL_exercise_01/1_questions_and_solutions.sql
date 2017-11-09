@@ -20,6 +20,8 @@ select name, price*100 from products;
 
 select name, concat(price*100, ' cents') from products;
 
+concat(price*100, ' cents') 列将显示如:24000 cents,concat将值联结到一起构成单个值。
+
 -- 1.6 Compute the average price of all the products.
 select avg(price) from products;
 select sum(price)/count(price) from products;
