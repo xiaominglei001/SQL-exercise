@@ -23,14 +23,14 @@ select name, concat(price*100, ' cents') from products;
 concat(price*100, ' cents') 列将显示如:24000 cents,concat将值联结到一起构成单个值。
 
 -- 1.6 Compute the average price of all the products.
-select avg(price) from products;
-select sum(price)/count(price) from products;
+select avg(price) from products; price列的平均值
+select sum(price)/count(price) from products; price列的平均值
  
 -- 1.7 Compute the average price of all products with manufacturer code equal to 2.
 select avg(price) from products where  Manufacturer = 2;
 
 -- 1.8 Compute the number of products with a price larger than or equal to $180.
-select count(*) from products where price>=180;
+select count(*) from products where price>=180; 单价大于等于180的产品个数
 
 -- 1.9 Select the name and price of all products with a price larger than or equal to $180, and sort first by price (in descending order), and then by name (in ascending order).
 select name, price from products where price>=180 order by price desc, name asc;
