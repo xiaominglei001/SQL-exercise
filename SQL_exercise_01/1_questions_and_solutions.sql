@@ -45,12 +45,16 @@ select a.name, a.price, b.name from products a join Manufacturers b on(a.manufac
 SELECT Products.Name, Price, Manufacturers.Name
    FROM Products INNER JOIN Manufacturers
    ON Products.Manufacturer = Manufacturers.Code;
+   
+等同于
+SELECT Products.Name,Products.Price,Manufacturers.Name 
+FROM Products,Manufacturers 
+WHERE Products.Manufacturer = Manufacturers.Code;
 
 -- 1.12 Select the average price of each manufacturer's products, showing only the manufacturer's code.
 SELECT AVG(Price), Manufacturer
     FROM Products
 GROUP BY Manufacturer;
-
 
 -- 1.13 Select the average price of each manufacturer's products, showing the manufacturer's name.
 select avg(a.price), b.name 
